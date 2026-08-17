@@ -23,14 +23,15 @@
   </div>
 
   <!-- Floating Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="brand-logo">
         <div class="logo-badge">&#9650;</div>
         <span>OnTheStage</span>
         <span class="ots-tag">GTM Engine</span>
       </a>
-      <ul class="nav-links">
+      
+      <ul class="nav-links" id="nav-links">
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#architecture">Architecture</a></li>
         <li><a href="#n8n-nodes">n8n Nodes</a></li>
@@ -38,9 +39,27 @@
         <li><a href="#discovery">Discovery</a></li>
         <li><a href="#plan">Plan</a></li>
       </ul>
+
       <div class="nav-actions">
-        <a href="#plan" class="btn btn-primary">Implementation Plan</a>
+        <a href="#plan" class="btn btn-primary nav-cta-btn">Implementation Plan</a>
+        <!-- Mobile Hamburger -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="#architecture" class="mobile-nav-link">Architecture Diagram</a>
+      <a href="#n8n-nodes" class="mobile-nav-link">n8n Workflow Nodes</a>
+      <a href="#example" class="mobile-nav-link">Real-World Example</a>
+      <a href="#discovery" class="mobile-nav-link">Tooling Discovery</a>
+      <a href="#plan" class="mobile-nav-link">Implementation Plan</a>
+      <a href="#plan" class="btn btn-primary" style="width: 100%; margin-top: 10px;">View 4-Phase Plan</a>
     </div>
   </nav>
 
@@ -191,7 +210,7 @@
 
       <div class="diagram-showcase-card">
         <div class="diagram-image-container">
-          <img src="architecture-diagram.jpg" alt="OnTheStage Prospect Automation Engine Architecture" class="architecture-img" />
+          <img src="architecture-diagram.jpg" alt="OnTheStage Prospect Automation Engine Architecture" class="architecture-img" loading="lazy" />
         </div>
         <div class="diagram-caption-grid">
           <div class="caption-item">
@@ -240,7 +259,7 @@
             <div class="node-content-box">
               <div class="node-top">
                 <span class="node-type">Schedule Trigger &amp; Webhook Intake</span>
-                <span class="node-id">01 Daily Schedule / Webhook Intake</span>
+                <span class="node-id">01 Daily Schedule / Webhook</span>
               </div>
               <h4 class="node-name">The Starter (Intake &amp; Trigger)</h4>
               <p class="node-explanation">
@@ -249,7 +268,7 @@
               <div class="node-meta-pills">
                 <span>Cron: Daily Schedule</span>
                 <span>Webhook Intake: /prospect-automation-intake</span>
-                <span>Payload: CSV / Intent Signals</span>
+                <span>Payload: CSV / Intent</span>
               </div>
             </div>
           </div>
@@ -263,7 +282,7 @@
             <div class="node-content-box">
               <div class="node-top">
                 <span class="node-type">Code Transformation</span>
-                <span class="node-id">02 Calculate Date Ranges &amp; Normalize Input</span>
+                <span class="node-id">02 Calculate Date Ranges &amp; Normalize</span>
               </div>
               <h4 class="node-name">The Data Normalizer</h4>
               <p class="node-explanation">
@@ -272,7 +291,7 @@
               <div class="node-meta-pills">
                 <span>Domain Sanitization</span>
                 <span>Lookback Windows</span>
-                <span>Schema Standardization</span>
+                <span>Standardization</span>
               </div>
             </div>
           </div>
@@ -286,16 +305,16 @@
             <div class="node-content-box">
               <div class="node-top">
                 <span class="node-type">CRM Query (HubSpot / Salesforce API)</span>
-                <span class="node-id">03 Query HubSpot Intent &amp; Dedupe Companies</span>
+                <span class="node-id">03 Query CRM Intent &amp; Dedupe</span>
               </div>
               <h4 class="node-name">The CRM Deduplication Shield</h4>
               <p class="node-explanation">
                 <strong>How it works:</strong> Queries HubSpot and Salesforce by domain. If the school is already a paying customer, an open sales opportunity, or was recently contacted, it is automatically excluded to prevent duplicate messaging.
               </p>
               <div class="node-meta-pills">
-                <span>HubSpot Company Search API</span>
+                <span>HubSpot Company Search</span>
                 <span>Domain Matching</span>
-                <span>Customer Protection</span>
+                <span>Customer Shield</span>
               </div>
             </div>
           </div>
@@ -316,9 +335,9 @@
                 <strong>How it works:</strong> Queries your tool of choice (Clay, ZoomInfo, Apollo, Amplemarket) to find the specific individuals running the theatre department (Drama Teachers, Theatre Directors, Fine Arts Department Chairs) and validates email deliverability.
               </p>
               <div class="node-meta-pills">
-                <span>Target Titles: Drama Teacher, Theatre Director, Fine Arts Chair</span>
-                <span>Deliverability Verification</span>
-                <span>LinkedIn Resolution</span>
+                <span>Drama Teachers &amp; Arts Chairs</span>
+                <span>Email Validation</span>
+                <span>LinkedIn Profiles</span>
               </div>
             </div>
           </div>
@@ -332,16 +351,16 @@
             <div class="node-content-box">
               <div class="node-top">
                 <span class="node-type">Claude 3.5 Sonnet Engine</span>
-                <span class="node-id">05 AI Pain Point Research &amp; Copy Generator</span>
+                <span class="node-id">05 AI Research &amp; PAS Copy Generator</span>
               </div>
               <h4 class="node-name">The AI Researcher &amp; Copywriter</h4>
               <p class="node-explanation">
                 <strong>How it works:</strong> Reads the school's theatre department website, extracts upcoming show titles (e.g. <em>"Mamma Mia!"</em> or <em>"Into the Woods"</em>), identifies ticketing pain points, and writes a tailored 3-sentence email on behalf of the SDR using the Problem-Agitate-Solve framework.
               </p>
               <div class="node-meta-pills">
-                <span>Model: Claude 3.5 Sonnet</span>
-                <span>Problem-Agitate-Solve Copy</span>
-                <span>Generates: Email + LinkedIn DM + SDR Phone Hook</span>
+                <span>Claude 3.5 Sonnet</span>
+                <span>Problem-Agitate-Solve</span>
+                <span>Email + LinkedIn + Phone Hook</span>
               </div>
             </div>
           </div>
@@ -363,7 +382,7 @@
               </p>
               <div class="node-meta-pills">
                 <span>Full Auto vs. Human Review</span>
-                <span>Zero Risk of Bad AI Outputs</span>
+                <span>Zero AI Collision Risk</span>
               </div>
             </div>
           </div>
@@ -376,8 +395,8 @@
             </div>
             <div class="node-content-box">
               <div class="node-top">
-                <span class="node-type">CRM Upsert (HubSpot / Salesforce Contacts API)</span>
-                <span class="node-id">07 CRM Upsert</span>
+                <span class="node-type">CRM Upsert (HubSpot / Salesforce API)</span>
+                <span class="node-id">07 CRM Upsert Record</span>
               </div>
               <h4 class="node-name">The CRM Record Creator</h4>
               <p class="node-explanation">
@@ -385,8 +404,8 @@
               </p>
               <div class="node-meta-pills">
                 <span>Contact &amp; Company Upsert</span>
-                <span>Saves AI Research to CRM Fields</span>
-                <span>Lead Status: IN_PROGRESS</span>
+                <span>Attaches Research Notes</span>
+                <span>Status: IN_PROGRESS</span>
               </div>
             </div>
           </div>
@@ -407,9 +426,9 @@
                 <strong>How it works:</strong> Enrolls the verified drama teacher directly into the appropriate sales cadence sent from the assigned SDR's email address, scheduling automatic multi-day follow-up touches.
               </p>
               <div class="node-meta-pills">
-                <span>HubSpot Sales Hub Sequences</span>
+                <span>HubSpot Sales Hub</span>
                 <span>Multi-Day Cadence</span>
-                <span>Stops Automatically on Reply</span>
+                <span>Auto-stops on Reply</span>
               </div>
             </div>
           </div>
@@ -423,7 +442,7 @@
             <div class="node-content-box">
               <div class="node-top">
                 <span class="node-type">Slack Webhook Alert</span>
-                <span class="node-id">09 Send Approval Review Notification</span>
+                <span class="node-id">09 Send Approval Review Alert</span>
               </div>
               <h4 class="node-name">The Slack Alert</h4>
               <p class="node-explanation">
