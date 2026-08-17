@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OnTheStage (OTS) — Custom GTM Prospect Automation Engine</title>
-  <meta name="description" content="A strategic architecture and workflow overview of the custom prospect automation engine proposed for OnTheStage.com." />
+  <title>OnTheStage (OTS) — GTM Prospect Automation Engine</title>
+  <meta name="description" content="A comprehensive architecture, workflow overview, and implementation plan for the OnTheStage custom prospect automation engine." />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-announcement">
     <div class="container">
-      <span>GTM Engineering Proposal</span> Custom Prospect Automation Engine Overview for OnTheStage.com
+      <span>GTM Engineering Proposal</span> Custom Prospect Automation Engine for OnTheStage.com
     </div>
   </div>
 
@@ -32,13 +32,14 @@
       </a>
       <ul class="nav-links">
         <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#bottlenecks">Current vs. Automated</a></li>
         <li><a href="#node-breakdown">Workflow Nodes</a></li>
         <li><a href="#lead-story">Lead Journey</a></li>
         <li><a href="#tech-stack">Tooling Stack</a></li>
         <li><a href="#implementation">Implementation Plan</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#implementation" class="btn btn-primary">Implementation Plan</a>
+        <a href="#implementation" class="btn btn-primary">Implementation Roadmap</a>
       </div>
     </div>
   </nav>
@@ -48,7 +49,7 @@
     <div class="container">
       <div class="hero-pill">
         <span class="dot"></span>
-        <span>Founding GTM Engineer Proposal &bull; Architecture Overview</span>
+        <span>Founding GTM Engineer Proposal &bull; Autonomous Outbound Architecture</span>
       </div>
 
       <h1 class="hero-title">
@@ -57,12 +58,12 @@
       </h1>
 
       <p class="hero-subtitle">
-        An intelligent, end-to-end outbound infrastructure built to ingest performing arts leads, discover theatre decision-makers, research upcoming productions, and dispatch hyper-personalized messaging on behalf of OnTheStage SDRs.
+        An intelligent, automated system designed to ingest performing arts leads, discover theatre decision-makers, research upcoming productions, and send hyper-personalized outreach <strong>on behalf of OnTheStage SDRs</strong>.
       </p>
 
       <div class="hero-cta-group">
-        <a href="#how-it-works" class="btn btn-cyan btn-lg">Explore the Engine Overview &#8595;</a>
-        <a href="#implementation" class="btn btn-ghost btn-lg">View Implementation Roadmap</a>
+        <a href="#how-it-works" class="btn btn-cyan btn-lg">Explore the 5-Step Engine &#8595;</a>
+        <a href="#implementation" class="btn btn-ghost btn-lg">View 4-Phase Roadmap</a>
       </div>
 
       <!-- Value Metric Strip -->
@@ -87,46 +88,107 @@
     </div>
   </section>
 
-  <!-- Plain English Concept Explanation -->
+  <!-- 5-Step Core Engine Process -->
   <section class="plain-concept-section" id="how-it-works">
     <div class="container">
       <div class="section-head">
         <span class="section-tag">Core Capabilities</span>
-        <h2 class="section-title">What We Are Building</h2>
-        <p class="section-desc">An overview of how the engine works from raw prospect intake to booked sales meetings.</p>
+        <h2 class="section-title">What We Are Building: The 5-Step Engine</h2>
+        <p class="section-desc">From raw lead ingestion to warm sales conversations on behalf of frontline reps.</p>
       </div>
 
       <div class="concept-grid">
         <div class="concept-card">
           <div class="concept-icon">&#128225;</div>
-          <h3>1. Multi-Channel Lead Ingestion</h3>
-          <p>Captures new prospects from spreadsheet uploads (state theatre festival lists, school districts) and real-time website visitors deanonymized via RB2B and Qualified.</p>
+          <h3>1. Multi-Modal Lead Ingestion</h3>
+          <p>Ingests target organizations via batch CSV uploads (state thespian festival lists, school district rosters) and real-time website visitors deanonymized via RB2B &amp; Qualified.</p>
+          <div class="mini-data-tag">Eliminates manual spreadsheet entry</div>
         </div>
-        <div class="concept-card">
-          <div class="concept-icon">&#128737;</div>
-          <h3>2. CRM Deduplication Shield</h3>
-          <p>Checks HubSpot and Salesforce first. If a school is an active client or has an open deal with an AE, they are excluded instantly to protect brand reputation.</p>
-        </div>
+
         <div class="concept-card">
           <div class="concept-icon">&#128100;</div>
-          <h3>3. Decision-Maker Discovery</h3>
-          <p>Runs a waterfall enrichment search across Clay, ZoomInfo, and Apollo to locate Drama Teachers, Theatre Directors, and Fine Arts Chairs with verified emails.</p>
+          <h3>2. Contact Discovery &amp; Waterfalls</h3>
+          <p>Clay executes a waterfall search across multiple data sources to identify Drama Teachers, Theatre Directors, and Fine Arts Chairs, verifying emails with 100% deliverability.</p>
+          <div class="mini-data-tag">Zero bounce rates &amp; LinkedIn hunting</div>
         </div>
+
         <div class="concept-card">
           <div class="concept-icon">&#127917;</div>
-          <h3>4. Deep Show &amp; Venue Research</h3>
-          <p>AI scans the school's theatre department website to detect their upcoming production (e.g. <em>"Into the Woods"</em>) and identify manual ticketing friction.</p>
+          <h3>3. Automated Show &amp; Venue Research</h3>
+          <p>AI scans the school's arts page to identify their upcoming production (e.g. <em>"Into the Woods (Spring 2026, 750 seats)"</em>) and their current ticketing method (cash, envelopes, Eventbrite fees).</p>
+          <div class="mini-data-tag">Pins down exact pain points</div>
         </div>
+
         <div class="concept-card">
           <div class="concept-icon">&#9997;</div>
-          <h3>5. Problem-Agitate-Solve Copy</h3>
-          <p>Claude 3.5 Sonnet drafts a natural, 3-sentence email on behalf of the assigned SDR, highlighting how OnTheStage solves their box office pains for $0 upfront.</p>
+          <h3>4. AI Messaging (On Behalf of SDRs)</h3>
+          <p>Claude 3.5 Sonnet writes a friendly, 3-sentence email using the Problem-Agitate-Solve framework, sent from the assigned SDR's inbox referencing their exact musical.</p>
+          <div class="mini-data-tag">Sounds 100% human-crafted</div>
         </div>
+
         <div class="concept-card">
           <div class="concept-icon">&#128640;</div>
-          <h3>6. CRM Sync &amp; Sequence Start</h3>
-          <p>Logs all show intelligence into HubSpot/Salesforce and enrolls the contact into an automated sequence. The SDR only steps in when the prospect replies.</p>
+          <h3>5. Outreach Dispatch &amp; CRM Sync</h3>
+          <p>Logs all show intelligence into HubSpot/Salesforce and automatically enrolls the contact into an outbound sequence. The SDR only steps in when the prospect replies.</p>
+          <div class="mini-data-tag">Reps focus only on warm replies</div>
         </div>
+
+        <div class="concept-card">
+          <div class="concept-icon">&#128737;</div>
+          <h3>+ CRM Deduplication Shield</h3>
+          <p>Checks HubSpot &amp; Salesforce first. If a school is an active client or has an open deal with an AE, they are excluded instantly to protect brand reputation.</p>
+          <div class="mini-data-tag">Guarantees zero client double-touches</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Current Bottlenecks vs Automated Engine -->
+  <section class="comparison-section" id="bottlenecks">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Process Transformation</span>
+        <h2 class="section-title">Current SDR Bottlenecks vs. Automated Engine</h2>
+        <p class="section-desc">How replacing manual research shifts hours to high-impact sales conversations.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Workflow Dimension</th>
+              <th>Current Manual Process</th>
+              <th>Automated Engine Replacement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Lead List Building</strong></td>
+              <td><span class="badge-red">Manual</span> Reps scrape district websites and festival PDFs line by line.</td>
+              <td><span class="badge-green">Instant</span> 1-click batch CSV ingestion or automatic RB2B web intent triggers.</td>
+            </tr>
+            <tr>
+              <td><strong>Account &amp; Show Research</strong></td>
+              <td><span class="badge-red">20+ min/lead</span> Browsing school pages to find show dates and director names.</td>
+              <td><span class="badge-green">Automated</span> AI extracts upcoming show title, venue size, and ticketing tool in seconds.</td>
+            </tr>
+            <tr>
+              <td><strong>Email Copy &amp; Personalization</strong></td>
+              <td><span class="badge-red">&lt; 1% Replies</span> Generic template blasts that educators ignore.</td>
+              <td><span class="badge-green">3.4&times; Reply Lift</span> Hyper-personalized PAS copy referencing their exact upcoming play.</td>
+            </tr>
+            <tr>
+              <td><strong>Data Sync &amp; Admin</strong></td>
+              <td><span class="badge-red">Fragmented</span> Copy-pasting data between LinkedIn, Apollo, CRM, and email.</td>
+              <td><span class="badge-green">Unified</span> Bi-directional sync into HubSpot/Salesforce with research notes attached.</td>
+            </tr>
+            <tr>
+              <td><strong>Rep Time Allocation</strong></td>
+              <td><span class="badge-red">80% Admin / 20% Selling</span> Most of the day spent on data entry and research.</td>
+              <td><span class="badge-green">80% Selling / 20% Strategy</span> Reps only handle positive replies and product demos.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -136,15 +198,15 @@
     <div class="container">
       <div class="section-head">
         <span class="section-tag">System Architecture</span>
-        <h2 class="section-title">Workflow Node Blueprint</h2>
+        <h2 class="section-title">9-Node Automated Workflow Blueprint</h2>
         <p class="section-desc">A detailed look at the 9 automated nodes powering the prospect engine.</p>
       </div>
 
       <div class="workflow-visual-card">
         <div class="wf-header">
           <div>
-            <span class="wf-badge">Architecture Blueprint</span>
-            <h3 style="font-size: 1.3rem; margin-top: 6px; color: #fff;">Prospect Automation Engine — 9-Node Pipeline</h3>
+            <span class="wf-badge">Production Architecture</span>
+            <h3 style="font-size: 1.3rem; margin-top: 6px; color: #fff;">Prospect Automation Engine — Master Workflow</h3>
           </div>
         </div>
 
@@ -418,50 +480,50 @@
     </div>
   </section>
 
-  <!-- Tech Stack Governance -->
+  <!-- Tech Stack Governance & Tool Alignment -->
   <section class="tech-stack-section" id="tech-stack">
     <div class="container">
       <div class="section-head">
         <span class="section-tag">Revenue Architecture</span>
-        <h2 class="section-title">OnTheStage GTM Tool Stack</h2>
-        <p class="section-desc">The specific tools OnTheStage uses across marketing, sales, and operations.</p>
+        <h2 class="section-title">OnTheStage GTM Tool Stack &amp; Alignment</h2>
+        <p class="section-desc">Key systems to align during technical discovery for seamless operation.</p>
       </div>
 
       <div class="stack-grid">
         <div class="stack-card">
           <div class="stack-badge-icon">&#128188;</div>
-          <h3 class="stack-name">CRM: HubSpot &amp; Salesforce</h3>
-          <p class="stack-desc">Stores all schools, drama teachers, and deals. Ensures no duplicate emails and tracks revenue.</p>
+          <h3 class="stack-name">CRM: HubSpot vs. Salesforce</h3>
+          <p class="stack-desc">Determine whether HubSpot is primary for sequence tracking with bi-directional sync to Salesforce for enterprise account reporting.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#128269;</div>
           <h3 class="stack-name">Visitor Intent: RB2B &amp; Qualified</h3>
-          <p class="stack-desc">Detects when theatre educators visit onthestage.com and deanonymizes them so the engine can reach out.</p>
+          <p class="stack-desc">Deanonymizes school web traffic in real time, triggering instant speed-to-lead outbound when drama directors browse pricing.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9881;</div>
           <h3 class="stack-name">Data: Clay + Apollo / ZoomInfo</h3>
-          <p class="stack-desc">Finds the right Drama Teachers, Arts Chairs, and Artistic Directors with verified email addresses.</p>
+          <p class="stack-desc">Automated waterfall enrichment ensuring 100% verified educator work emails and phone numbers.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9993;</div>
-          <h3 class="stack-name">Outreach: HubSpot Sales Hub</h3>
-          <p class="stack-desc">Sends personalized emails on behalf of SDRs at optimal times and schedules follow-up tasks.</p>
+          <h3 class="stack-name">Outreach: HubSpot Sales vs. Dedicated Engine</h3>
+          <p class="stack-desc">Option to run sequences natively in HubSpot Sales Hub or leverage dedicated cold deliverability platforms (Amplemarket/Smartlead).</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#129302;</div>
           <h3 class="stack-name">AI: Claude 3.5 Sonnet</h3>
-          <p class="stack-desc">Researches the school's upcoming production and writes natural, human-sounding messages.</p>
+          <p class="stack-desc">Anthropic / AWS Bedrock integration providing high-reasoning show research and human-sounding copy generation.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9889;</div>
           <h3 class="stack-name">Engine: Orchestration Core</h3>
-          <p class="stack-desc">The automated connective tissue running all 9 nodes smoothly without manual intervention.</p>
+          <p class="stack-desc">Central event-driven pipeline managing webhook listeners, deduplication filters, and SDR routing.</p>
         </div>
       </div>
     </div>
@@ -512,9 +574,9 @@
   <footer class="cta-footer">
     <div class="container">
       <div class="cta-card-box">
-        <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 14px;">Next Step: Technical Discovery</h2>
+        <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 14px;">Ready for Technical Discovery</h2>
         <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto 24px;">
-          Align on CRM/Outreach tool preferences (HubSpot vs. Salesforce), review territory routing, and initiate Phase 1 of the implementation plan.
+          Align on CRM &amp; outreach preferences (HubSpot vs. Salesforce), review territory routing, and initiate Phase 1 of the implementation plan.
         </p>
         <a href="#how-it-works" class="btn btn-cyan btn-lg">&#8593; Back to Top Overview</a>
       </div>
