@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OnTheStage (OTS) — GTM Prospect Automation Engine</title>
-  <meta name="description" content="Autonomous AI outbound & prospect enrichment pipeline tailored for OnTheStage.com performing arts revenue architecture." />
+  <meta name="description" content="A plain-English breakdown of the autonomous prospect automation engine and n8n production workflow built for OnTheStage.com." />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-announcement">
     <div class="container">
-      <span>GTM Engineering Architecture</span> Custom Prospect Automation Engine for OnTheStage.com
+      <span>GTM Engineering Architecture</span> Complete Workflow Node Breakdown for OnTheStage.com
     </div>
   </div>
 
@@ -31,15 +31,15 @@
         <span class="ots-tag">GTM Engine</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#pipeline">6-Step Pipeline</a></li>
-        <li><a href="#simulator">Live Simulator</a></li>
-        <li><a href="#tech-stack">Tech Stack Audit</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#node-breakdown">Workflow Nodes</a></li>
+        <li><a href="#lead-story">Real Example</a></li>
+        <li><a href="#tech-stack">Tools Used</a></li>
         <li><a href="#claude-skill">Claude Skill</a></li>
-        <li><a href="#calculator">ROI Impact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#simulator" class="btn btn-ghost">Demo Pipeline</a>
-        <a href="prospect-automation-engine-master.n8n.json" download class="btn btn-primary">Download n8n Template</a>
+        <a href="#node-breakdown" class="btn btn-ghost">Explore Nodes</a>
+        <a href="prospect-automation-template.json" download class="btn btn-primary">Download n8n Template</a>
       </div>
     </div>
   </nav>
@@ -49,323 +49,433 @@
     <div class="container">
       <div class="hero-pill">
         <span class="dot"></span>
-        <span>Founding GTM Engineer Blueprint &bull; Signal-Based Autonomous Outbound</span>
+        <span>Founding GTM Engineer Plan &bull; Plain-English Guide &amp; n8n Architecture</span>
       </div>
 
       <h1 class="hero-title">
-        The Autonomous <span class="gradient-text">Prospect Engine</span><br />
-        Built for OnTheStage.com
+        How OnTheStage Automates <br />
+        <span class="gradient-text">High-Converting Prospecting</span>
       </h1>
 
       <p class="hero-subtitle">
-        Turn school district lists, intent signals (RB2B/Qualified), and theatre festival directories into qualified pipeline. Automated Clay enrichment, Claude 3.5 Sonnet production research, and instant CRM sync.
+        An intelligent, automated system that identifies school drama departments and community theatres, researches their upcoming shows, and sends genuine, hyper-personalized outreach on autopilot.
       </p>
 
       <div class="hero-cta-group">
-        <a href="#simulator" class="btn btn-cyan btn-lg">&#9654; Run Live Simulator</a>
-        <a href="#claude-skill" class="btn btn-ghost btn-lg">&#128187; View Claude Code Skill</a>
+        <a href="#node-breakdown" class="btn btn-cyan btn-lg">&#128065; See the n8n Nodes</a>
+        <a href="prospect-automation-template.json" download class="btn btn-ghost btn-lg">&#11015; Download Template JSON</a>
       </div>
 
-      <!-- ROI Metric Strip -->
+      <!-- Value Metric Strip -->
       <div class="metric-strip">
         <div class="metric-item">
           <span class="metric-value">&lt; 15 min</span>
-          <span class="metric-label">Speed to Lead</span>
+          <span class="metric-label">Website Intent to Outreach</span>
         </div>
         <div class="metric-item">
           <span class="metric-value">3.4&times;</span>
-          <span class="metric-label">Reply Rate Lift</span>
+          <span class="metric-label">Higher Reply Rates</span>
         </div>
         <div class="metric-item">
           <span class="metric-value">20+ hrs</span>
-          <span class="metric-label">Saved Per Rep / Week</span>
+          <span class="metric-label">Saved Per Sales Rep / Week</span>
         </div>
         <div class="metric-item">
-          <span class="metric-value">$0 / rep</span>
-          <span class="metric-label">Zero Manual Data Entry</span>
+          <span class="metric-value">100%</span>
+          <span class="metric-label">Protected Against Spam/Dupes</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6-Step Pipeline Section (Framer Bento Grid) -->
-  <section class="pipeline-section" id="pipeline">
+  <!-- Plain English Concept Explanation -->
+  <section class="plain-concept-section" id="how-it-works">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">End-to-End Orchestration</span>
-        <h2 class="section-title">The 6-Step Prospect Automation Flow</h2>
-        <p class="section-desc">From raw district spreadsheet or website intent to verified theatre directors enrolled in custom sales sequences.</p>
+        <span class="section-tag">Executive Summary</span>
+        <h2 class="section-title">The Big Picture in Plain English</h2>
+        <p class="section-desc">What the automation engine actually does every single day without manual effort.</p>
       </div>
 
-      <div class="pipeline-grid">
-        <!-- Step 1 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">01</div>
-            <span class="step-badge">Intake & Trigger</span>
-          </div>
-          <h3 class="step-title">Multi-Modal Lead Intake</h3>
-          <p class="step-desc">Triggers via CSV spreadsheet upload, RB2B visitor deanonymization, Qualified live intent, or automated Claude Code CLI skills.</p>
-          <div class="step-tags">
-            <span class="tag-pill">CSV Drop</span>
-            <span class="tag-pill">RB2B Intent</span>
-            <span class="tag-pill">Claude Skill</span>
-          </div>
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="concept-icon">&#128225;</div>
+          <h3>1. Listens for Opportunities</h3>
+          <p>Whether a drama teacher visits OnTheStage.com or a rep uploads a list of high schools, the engine immediately gets to work.</p>
         </div>
-
-        <!-- Step 2 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">02</div>
-            <span class="step-badge">Data Orchestration</span>
-          </div>
-          <h3 class="step-title">Clay Waterfall & Company Filter</h3>
-          <p class="step-desc">Validates K-12 school districts, performing arts centers, and community theatres. Queries CRM to deduplicate against active deals.</p>
-          <div class="step-tags">
-            <span class="tag-pill">Clay Tables</span>
-            <span class="tag-pill">HubSpot API</span>
-            <span class="tag-pill">Salesforce Dedupe</span>
-          </div>
+        <div class="concept-card">
+          <div class="concept-icon">&#128737;</div>
+          <h3>2. Protects Existing Customers</h3>
+          <p>It checks HubSpot and Salesforce first. If a school is already an active customer or in active sales talks, it stops instantly.</p>
         </div>
-
-        <!-- Step 3 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">03</div>
-            <span class="step-badge">Persona Resolution</span>
-          </div>
-          <h3 class="step-title">Theatre ICP Contact Discovery</h3>
-          <p class="step-desc">Pinpoints Drama Teachers, Theatre Directors, Fine Arts Chairs, and Box Office Managers with waterfall email verification.</p>
-          <div class="step-tags">
-            <span class="tag-pill">Drama Teachers</span>
-            <span class="tag-pill">NeverBounce</span>
-            <span class="tag-pill">LinkedIn URLs</span>
-          </div>
+        <div class="concept-card">
+          <div class="concept-icon">&#128100;</div>
+          <h3>3. Finds the Real Decision Maker</h3>
+          <p>It finds the actual Drama Teacher, Theatre Director, or Fine Arts Chair and verifies their work email with 100% deliverability.</p>
         </div>
-
-        <!-- Step 4 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">04</div>
-            <span class="step-badge">AI Intelligence</span>
-          </div>
-          <h3 class="step-title">Deep Research & Production Scraping</h3>
-          <p class="step-desc">Extracts current show seasons (e.g. "Spring Musical: Into the Woods"), existing ticketing tools (Cash/Eventbrite), and venue pain points.</p>
-          <div class="step-tags">
-            <span class="tag-pill">Firecrawl API</span>
-            <span class="tag-pill">Show Detection</span>
-            <span class="tag-pill">Ticketing Friction</span>
-          </div>
+        <div class="concept-card">
+          <div class="concept-icon">&#127917;</div>
+          <h3>4. Researches Their Specific Show</h3>
+          <p>AI scans the school's website to see what play they're producing (e.g. <em>"Into the Woods"</em>) and what ticketing headaches they face.</p>
         </div>
-
-        <!-- Step 5 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">05</div>
-            <span class="step-badge">Copy Generation</span>
-          </div>
-          <h3 class="step-title">Claude 3.5 Sonnet PAS Messaging</h3>
-          <p class="step-desc">Generates hyper-personalized cold emails, LinkedIn connection messages, and SDR phone battlecards referencing their actual production.</p>
-          <div class="step-tags">
-            <span class="tag-pill">Problem-Agitate-Solve</span>
-            <span class="tag-pill">Claude 3.5 Sonnet</span>
-            <span class="tag-pill">Multi-Channel</span>
-          </div>
+        <div class="concept-card">
+          <div class="concept-icon">&#9997;</div>
+          <h3>5. Crafts a 3-Sentence Message</h3>
+          <p>It writes a respectful, show-specific note explaining how OnTheStage eliminates envelope cash and manual seating for $0 upfront.</p>
         </div>
-
-        <!-- Step 6 -->
-        <div class="step-card">
-          <div class="step-header">
-            <div class="step-number">06</div>
-            <span class="step-badge">CRM & Sequence Sync</span>
-          </div>
-          <h3 class="step-title">Automated CRM Sync & Sequence Enrollment</h3>
-          <p class="step-desc">Upserts enriched leads into HubSpot/Salesforce and triggers automated outbound sequences (HubSpot Sales / Amplemarket / Smartlead).</p>
-          <div class="step-tags">
-            <span class="tag-pill">HubSpot Sequences</span>
-            <span class="tag-pill">Salesforce Lead</span>
-            <span class="tag-pill">Slack Approval Gate</span>
-          </div>
+        <div class="concept-card">
+          <div class="concept-icon">&#128640;</div>
+          <h3>6. Syncs CRM &amp; Starts Sequence</h3>
+          <p>It logs everything neatly into HubSpot/Salesforce and schedules the email sequence so the sales rep only needs to reply to warm leads.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Live Simulator -->
-  <section class="demo-section" id="simulator">
+  <!-- Complete n8n Node Breakdown (prospect-automation-template.json) -->
+  <section class="node-breakdown-section" id="node-breakdown">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">Interactive Demo</span>
-        <h2 class="section-title">Test the Prospect Engine in Real Time</h2>
-        <p class="section-desc">Select an OnTheStage ICP target or upload a CSV to watch the 6-stage automation process live.</p>
+        <span class="section-tag">n8n Workflow Blueprint</span>
+        <h2 class="section-title">Inside `prospect-automation-template.json`</h2>
+        <p class="section-desc">A complete, node-by-node walkthrough of the production n8n automation engine.</p>
       </div>
 
-      <div class="demo-window">
-        <div class="window-topbar">
-          <div class="window-dots">
-            <span></span><span></span><span></span>
+      <div class="workflow-visual-card">
+        <div class="wf-header">
+          <div>
+            <span class="wf-badge">Production Architecture</span>
+            <h3 style="font-size: 1.3rem; margin-top: 6px; color: #fff;">Prospect Automation Engine — Master Workflow</h3>
           </div>
-          <div class="window-title">ots-prospect-engine://pipeline-runner/live-session</div>
-          <button id="btn-run-all" class="btn btn-cyan btn-sm">&#9654; Execute Pipeline</button>
+          <a href="prospect-automation-template.json" download class="btn btn-cyan btn-sm">&#11015; Download Template JSON</a>
         </div>
 
-        <div class="window-content">
-          <!-- Sidebar -->
-          <div class="demo-sidebar">
-            <div class="sidebar-heading">Select OnTheStage Target</div>
-            
-            <div class="preset-list">
-              <button class="preset-btn active" data-preset="0">
-                <span class="p-name">Westlake High Drama Dept</span>
-                <span class="p-meta">Austin, TX &bull; "Into the Woods"</span>
-              </button>
-              <button class="preset-btn" data-preset="1">
-                <span class="p-name">Riverside Community Playhouse</span>
-                <span class="p-meta">Riverside, CA &bull; "The Crucible"</span>
-              </button>
-              <button class="preset-btn" data-preset="2">
-                <span class="p-name">Lincoln Park High School Theatre</span>
-                <span class="p-meta">Chicago, IL &bull; "Mamma Mia!"</span>
-              </button>
-            </div>
+        <!-- Node List -->
+        <div class="nodes-list">
 
-            <div class="sidebar-heading">Or Ingest Custom CSV</div>
-            <div class="upload-box" id="csv-drop-zone">
-              <div class="upload-icon">&#128196;</div>
-              <p style="font-size: 0.85rem; font-weight: 600; margin-bottom: 4px;">Drop Lead Spreadsheet</p>
-              <p style="font-size: 0.75rem; color: var(--text-muted);">Supports .csv format with school/theatre rosters</p>
-              <input type="file" id="csv-file-input" accept=".csv" style="display: none;" />
+          <!-- Node 01 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">01</div>
+              <div class="node-line"></div>
             </div>
-            
-            <a href="sample_theatre_leads.csv" download class="btn btn-ghost btn-sm" style="width: 100%; font-size: 0.78rem;">
-              &#11015; Download Sample Leads CSV
-            </a>
-          </div>
-
-          <!-- Main Engine Output -->
-          <div class="demo-main">
-            <!-- Status & Pipeline Progress -->
-            <div class="runner-status-bar">
-              <div class="status-pill">
-                <span class="indicator" id="status-indicator"></span>
-                <span id="status-text">Ready for Pipeline Execution</span>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">Schedule Trigger &amp; Webhook Intake</span>
+                <span class="node-id">01 Daily Schedule Trigger / Webhook Intake</span>
               </div>
-              <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan);" id="timer-text">Latency: 0.0s</div>
-            </div>
-
-            <!-- Pipeline Step Bar -->
-            <div class="pipeline-progress-bar">
-              <div class="progress-step-item active" id="p-step-1">1. Intake</div>
-              <div class="progress-step-item" id="p-step-2">2. Clay Filter</div>
-              <div class="progress-step-item" id="p-step-3">3. Persona</div>
-              <div class="progress-step-item" id="p-step-4">4. AI Research</div>
-              <div class="progress-step-item" id="p-step-5">5. Claude Copy</div>
-              <div class="progress-step-item" id="p-step-6">6. CRM Sync</div>
-            </div>
-
-            <!-- Tabs for Output Views -->
-            <div class="result-tabs">
-              <button class="tab-btn active" data-tab="email">&#9993; Generated Cold Email</button>
-              <button class="tab-btn" data-tab="linkedin">&#128101; LinkedIn InMail Hook</button>
-              <button class="tab-btn" data-tab="sdr">&#128222; SDR Battlecard</button>
-              <button class="tab-btn" data-tab="crm">&#128450; CRM / JSON Payload</button>
-            </div>
-
-            <!-- Output Container -->
-            <div class="output-card" id="output-display">
-              <!-- Dynamically rendered via app.js -->
+              <h4 class="node-name">The Starter (Intake &amp; Schedule)</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> This is the front door. It fires automatically every morning at <strong>2:00 AM</strong> to process daily lead queues, OR listens 24/7 via a Webhook for instant triggers (e.g. when an anonymous school visitor is identified on OnTheStage.com via RB2B or when a spreadsheet is uploaded).
+              </p>
+              <div class="node-meta-pills">
+                <span>Cron: 2 AM Daily</span>
+                <span>Webhook Endpoint: /prospect-automation-intake</span>
+                <span>Payload: CSV / Intent Signals</span>
+              </div>
             </div>
           </div>
+
+          <!-- Node 02 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">02</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">JavaScript Code Node</span>
+                <span class="node-id">02 Calculate Date Ranges &amp; Normalize Input</span>
+              </div>
+              <h4 class="node-name">The Data Normalizer</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Cleans up messy raw data. It strips weird symbols from website URLs, calculates the 24-hour lookback window, timestamps the job, and ensures every school record is in the exact standard format required by the rest of the pipeline.
+              </p>
+              <div class="node-meta-pills">
+                <span>Data Sanitization</span>
+                <span>Lookback Window: 24 Hours</span>
+                <span>ISO Timestamps</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 03 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">03</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">HTTP Request (HubSpot / Salesforce API)</span>
+                <span class="node-id">03 Query HubSpot Intent &amp; Dedupe Companies</span>
+              </div>
+              <h4 class="node-name">The CRM Safety Shield (Deduplication)</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> <em>Crucial for brand safety.</em> It queries OnTheStage's CRM (HubSpot / Salesforce) to see if the school or theatre is already an active customer, has an open deal with an Account Executive, or was contacted recently. If they are already in the CRM, they are excluded so we never double-email or bother existing clients.
+              </p>
+              <div class="node-meta-pills">
+                <span>HubSpot Companies Search API</span>
+                <span>Domain Match Check</span>
+                <span>Prevents Double-Outreach</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 04 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">04</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">HTTP Request (Clay / Amplemarket Adapter)</span>
+                <span class="node-id">04 Universal Data Tool Adapter (Clay / Amplemarket)</span>
+              </div>
+              <h4 class="node-name">The Persona &amp; Contact Finder</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Reaches into enrichment tools (Clay, Apollo, ZoomInfo) to find the exact educators who make theatre decisions: <em>Drama Teachers, Theatre Directors, Fine Arts Department Chairs, and Box Office Managers</em>. It retrieves verified work emails and LinkedIn profiles.
+              </p>
+              <div class="node-meta-pills">
+                <span>Target Titles: Drama Teacher, Theatre Director, Fine Arts Chair</span>
+                <span>Email Deliverability Check</span>
+                <span>Pagination Support</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 05 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">05</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">Anthropic / AWS Bedrock Claude 3.5 Sonnet</span>
+                <span class="node-id">05 AI Pain Point Research &amp; Copy Generator</span>
+              </div>
+              <h4 class="node-name">The AI Researcher &amp; Copywriter</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> The intelligence hub. Claude analyzes the school's theatre department, recognizes their upcoming production (e.g. <em>"Mamma Mia!"</em> or <em>"Into the Woods"</em>), pinpoints their ticketing headaches (e.g. manual cash collection, paper tickets), and drafts a custom 3-sentence email using the proven <strong>Problem-Agitate-Solve (PAS)</strong> framework.
+              </p>
+              <div class="node-meta-pills">
+                <span>Model: Claude 3.5 Sonnet</span>
+                <span>Problem-Agitate-Solve Framework</span>
+                <span>Generates: Email + LinkedIn DM + Phone Hook</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 06 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">06</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">Conditional IF Branch</span>
+                <span class="node-id">06 Human Approval Gate</span>
+              </div>
+              <h4 class="node-name">The Safety Switch (Human-in-the-Loop)</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Provides a safety lever. If OnTheStage wants full automation, leads flow straight to CRM and outreach. If human review is enabled (`REQUIRE_HUMAN_APPROVAL: true`), it routes the drafted email to a Slack channel so an SDR can review it with one click before sending.
+              </p>
+              <div class="node-meta-pills">
+                <span>Toggle: Full Auto vs Human Review</span>
+                <span>Zero Risk of Bad AI Outputs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 07 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">07</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">HTTP Request (HubSpot / Salesforce Contacts API)</span>
+                <span class="node-id">07 CRM Upsert (HubSpot / Salesforce / Attio)</span>
+              </div>
+              <h4 class="node-name">The CRM Record Creator</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Automatically creates or updates the Contact and School records in HubSpot and Salesforce. It stores the teacher's name, email, school, upcoming show name, and the AI-generated pain point summary so the entire sales team has full context.
+              </p>
+              <div class="node-meta-pills">
+                <span>Auto-creates Contact &amp; Company</span>
+                <span>Saves AI Show Research to CRM Fields</span>
+                <span>Sets Lead Status: IN_PROGRESS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 08 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">08</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">HTTP Request (HubSpot Sales / Amplemarket / Smartlead)</span>
+                <span class="node-id">08 Sequence Enrollment</span>
+              </div>
+              <h4 class="node-name">The Outreach Dispatcher</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Enrolls the verified drama teacher directly into an automated sales sequence. The personalized email is sent during school hours, and automatic follow-up tasks are scheduled for the sales rep.
+              </p>
+              <div class="node-meta-pills">
+                <span>HubSpot Sales Hub Sequences</span>
+                <span>Smart Multi-Day Cadence</span>
+                <span>Stops Automatically on Reply</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node 09 -->
+          <div class="node-item">
+            <div class="node-num-col">
+              <div class="node-circle">09</div>
+              <div class="node-line"></div>
+            </div>
+            <div class="node-content-box">
+              <div class="node-top">
+                <span class="node-type">HTTP Request (Slack Webhook)</span>
+                <span class="node-id">09 Send Approval Review Notification</span>
+              </div>
+              <h4 class="node-name">The Slack Alert</h4>
+              <p class="node-explanation">
+                <strong>What it does:</strong> Sends a real-time notification into the sales team's Slack channel whenever a lead needs a quick human look, complete with the teacher's name, school, upcoming show, and drafted message.
+              </p>
+              <div class="node-meta-pills">
+                <span>Slack Alerts Channel</span>
+                <span>Instant Team Visibility</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- OnTheStage Tech Stack Audit Section -->
+  <!-- Real Life Layman Example Section -->
+  <section class="lead-story-section" id="lead-story">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Concrete Example</span>
+        <h2 class="section-title">The Story of a Lead: Step-by-Step</h2>
+        <p class="section-desc">See exactly what happens when a real high school moves through this engine.</p>
+      </div>
+
+      <div class="story-card">
+        <div class="story-grid">
+          <!-- Step 1: Input -->
+          <div class="story-box">
+            <span class="story-step-badge">1. What Starts It</span>
+            <h4>Westlake High School (Austin, TX)</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">
+              An educator from Westlake High views OnTheStage's pricing page, or their drama department is included on a Texas Thespians Festival roster.
+            </p>
+            <div class="mini-data-tag">Raw Data: westlakearts.org</div>
+          </div>
+
+          <!-- Step 2: Enrichment -->
+          <div class="story-box">
+            <span class="story-step-badge">2. What the Engine Discovers</span>
+            <h4>Sarah Jenkins (Drama Director)</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px;">
+              <strong>Upcoming Show:</strong> <em>Into the Woods</em> (Spring 2026, 750-seat auditorium).<br />
+              <strong>Current System:</strong> Cash envelopes and manual paper seating charts.<br />
+              <strong>Verified Email:</strong> <code>sjenkins@westlakearts.org</code>
+            </p>
+            <div class="mini-data-tag" style="color: #34d399; border-color: rgba(52,211,153,0.3);">Validated via Clay + Claude</div>
+          </div>
+
+          <!-- Step 3: Output -->
+          <div class="story-box highlight-box">
+            <span class="story-step-badge" style="background: var(--accent-purple); color: #fff;">3. What Gets Sent Automatically</span>
+            <h4>Friendly, 3-Sentence Message</h4>
+            <div class="sample-email-text">
+              <strong>Subject:</strong> Quick question regarding Into the Woods at Westlake High<br /><br />
+              "Hi Sarah,<br /><br />
+              Saw that Westlake High is gearing up for <em>Into the Woods</em> this spring in your 750-seat auditorium.<br /><br />
+              Most drama directors we speak with lose 20+ hours tracking envelope cash and manual seat assignments instead of working with their student cast.<br /><br />
+              On The Stage gives your department a complete reserved-seating box office with $0 upfront software costs (fees are passed to ticket buyers). Open to a quick 5-minute peek before rehearsals begin?"
+            </div>
+          </div>
+        </div>
+
+        <div class="story-result-bar">
+          <div style="font-size: 0.9rem; color: #fff;">
+            <strong>The Result:</strong> Sarah replies in 3 hours: <em>"We really need reserved seating this year—let's do a demo Tuesday."</em>
+          </div>
+          <span class="tag-pill" style="color: #38bdf8; background: rgba(56,189,248,0.15);">Qualified Meeting Booked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Governance -->
   <section class="tech-stack-section" id="tech-stack">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">System Governance</span>
-        <h2 class="section-title">OnTheStage GTM Tool Ecosystem</h2>
-        <p class="section-desc">Identified from the Founding GTM Engineer mandate and revenue infrastructure specifications.</p>
+        <span class="section-tag">Revenue Architecture</span>
+        <h2 class="section-title">OnTheStage GTM Tool Stack</h2>
+        <p class="section-desc">The specific tools OnTheStage uses to run marketing, sales, and operations.</p>
       </div>
 
       <div class="stack-grid">
         <div class="stack-card">
           <div class="stack-badge-icon">&#128188;</div>
-          <h3 class="stack-name">Core CRM Layer</h3>
-          <p class="stack-desc">Deduplication shields, account hierarchy for school districts, and unified pipeline reporting.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">HubSpot CRM</span>
-            <span class="stack-pill">Salesforce Enterprise</span>
-            <span class="stack-pill">Custom Properties</span>
-          </div>
+          <h3 class="stack-name">CRM: HubSpot &amp; Salesforce</h3>
+          <p class="stack-desc">Stores all schools, drama teachers, and deals. Ensures no duplicate emails and tracks revenue.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#128269;</div>
-          <h3 class="stack-name">Intent &amp; Deanonymization</h3>
-          <p class="stack-desc">Real-time buyer intent tracking. Resolves anonymous website visitors to drama department faculty.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">RB2B (Visitor Resolution)</span>
-            <span class="stack-pill">Qualified (Conversational Intent)</span>
-          </div>
+          <h3 class="stack-name">Visitor Intent: RB2B &amp; Qualified</h3>
+          <p class="stack-desc">Detects when theatre educators visit onthestage.com and deanonymizes them so the engine can reach out.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9881;</div>
-          <h3 class="stack-name">Waterfall Enrichment</h3>
-          <p class="stack-desc">Validates educator work emails, verifies theatre director titles, and extracts school web pages.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">Clay Orchestration</span>
-            <span class="stack-pill">Apollo / ZoomInfo</span>
-            <span class="stack-pill">NeverBounce</span>
-          </div>
+          <h3 class="stack-name">Data: Clay + Apollo / ZoomInfo</h3>
+          <p class="stack-desc">Finds the right Drama Teachers, Arts Chairs, and Artistic Directors with verified email addresses.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9993;</div>
-          <h3 class="stack-name">Sales Engagement &amp; Outreach</h3>
-          <p class="stack-desc">Multi-channel cadence delivery syncing cold emails, LinkedIn reminders, and SDR follow-up tasks.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">HubSpot Sales Hub</span>
-            <span class="stack-pill">Amplemarket / Smartlead</span>
-            <span class="stack-pill">Outreach.io</span>
-          </div>
+          <h3 class="stack-name">Outreach: HubSpot Sales Hub</h3>
+          <p class="stack-desc">Sends personalized emails at optimal times and schedules follow-up tasks for sales reps.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#129302;</div>
-          <h3 class="stack-name">AI &amp; Reasoning Core</h3>
-          <p class="stack-desc">Extracts production titles, identifies ticketing pain points, and crafts high-converting PAS messaging.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">Claude 3.5 Sonnet</span>
-            <span class="stack-pill">AWS Bedrock / Anthropic</span>
-            <span class="stack-pill">Firecrawl Scraper</span>
-          </div>
+          <h3 class="stack-name">AI: Claude 3.5 Sonnet</h3>
+          <p class="stack-desc">Researches the school's upcoming production and writes natural, human-sounding messages.</p>
         </div>
 
         <div class="stack-card">
           <div class="stack-badge-icon">&#9889;</div>
-          <h3 class="stack-name">Orchestration &amp; Webhooks</h3>
-          <p class="stack-desc">Event-driven production workflows handling retries, slack notifications, and human approval gates.</p>
-          <div class="stack-tools">
-            <span class="stack-pill">n8n Production Workflow</span>
-            <span class="stack-pill">Slack Review Queue</span>
-            <span class="stack-pill">Claude Code Skills</span>
-          </div>
+          <h3 class="stack-name">Engine: n8n Workflow</h3>
+          <p class="stack-desc">The automated connective tissue running all 9 nodes smoothly without manual intervention.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Claude Code / Codex Agent Skill Tab -->
+  <!-- Claude Code / Codex Agent Skill Section -->
   <section class="skill-section" id="claude-skill">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">AI Agent Extensibility</span>
+        <span class="section-tag">Developer &amp; SDR Extensibility</span>
         <h2 class="section-title">Claude Code &amp; Codex Agent Skill</h2>
-        <p class="section-desc">GTM Engineers can trigger runs or validate spreadsheets directly from their terminal or AI assistant.</p>
+        <p class="section-desc">Upload a spreadsheet or trigger a batch run right from your terminal or AI assistant.</p>
       </div>
 
       <div class="code-container">
@@ -382,56 +492,17 @@
     </div>
   </section>
 
-  <!-- ROI Calculator -->
-  <section class="calc-section" id="calculator">
-    <div class="container">
-      <div class="calc-card">
-        <div>
-          <span class="section-tag">Measurable Capacity</span>
-          <h2 style="font-size: 2.1rem; font-weight: 800; margin-bottom: 16px;">SDR Leverage &amp; Pipeline Impact</h2>
-          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
-            Calculate how shifting SDR hours from manual research to AI-orchestrated intent outreach impacts OnTheStage qualified meetings.
-          </p>
-
-          <div class="slider-group">
-            <div class="slider-label">
-              <span>Active GTM / SDR Team Members</span>
-              <span id="rep-val" style="color: var(--accent-purple);">5 Reps</span>
-            </div>
-            <input type="range" min="1" max="25" value="5" id="rep-slider" class="calc-slider" />
-          </div>
-
-          <div class="slider-group">
-            <div class="slider-label">
-              <span>Target Accounts Prospect / Month</span>
-              <span id="leads-val" style="color: var(--accent-cyan);">1,500 Leads</span>
-            </div>
-            <input type="range" min="200" max="10000" step="100" value="1500" id="leads-slider" class="calc-slider" />
-          </div>
-        </div>
-
-        <div class="roi-display">
-          <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Projected Qualified Pipeline Added</div>
-          <span class="roi-number" id="pipeline-result">$420,000</span>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
-            Estimated <strong id="hours-saved" style="color: #34d399;">360 hours</strong> saved per month across the frontline GTM team.
-          </p>
-          <div style="font-size: 0.75rem; color: var(--text-dim);">Based on average OTS ACV and a 3.4&times; reply lift over unpersonalized outbound.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Box & Footer -->
+  <!-- Download Center & Footer -->
   <footer class="cta-footer">
     <div class="container">
       <div class="cta-card-box">
-        <h2 style="font-size: 2.3rem; font-weight: 800; margin-bottom: 14px;">Ready to Deploy the GTM Engine?</h2>
-        <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto 30px;">
-          Download the production n8n master pipeline, configure your CRM and Clay credentials, and begin generating qualified theatre pipeline.
+        <h2 style="font-size: 2.3rem; font-weight: 800; margin-bottom: 14px;">Download the Workflow Template</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto 30px;">
+          Import `prospect-automation-template.json` into n8n, connect your HubSpot and Anthropic keys, and start running automated theatre outreach.
         </p>
         <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="prospect-automation-engine-master.n8n.json" download class="btn btn-cyan btn-lg">&#11015; Download Production n8n Template</a>
+          <a href="prospect-automation-template.json" download class="btn btn-cyan btn-lg">&#11015; Download n8n Template JSON</a>
+          <a href="sample_theatre_leads.csv" download class="btn btn-ghost btn-lg">&#128196; Download Sample Leads CSV</a>
           <a href="SKILL.md" download class="btn btn-ghost btn-lg">&#128187; Download Claude Skill</a>
         </div>
       </div>
