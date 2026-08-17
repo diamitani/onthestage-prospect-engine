@@ -411,6 +411,179 @@ a {
   font-weight: bold;
 }
 
+/* Architecture Showcase Section */
+.architecture-section {
+  padding: 60px 0;
+}
+.diagram-showcase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: 0 0 50px rgba(99, 102, 241, 0.15);
+  overflow: hidden;
+}
+.diagram-image-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+}
+.architecture-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.architecture-img:hover {
+  transform: scale(1.01);
+}
+.diagram-caption-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.caption-item {
+  background: rgba(10, 12, 20, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.caption-item strong {
+  color: #38bdf8;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Node Breakdown Section */
+.node-breakdown-section {
+  padding: 60px 0;
+}
+.workflow-visual-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-card);
+}
+.wf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 30px;
+}
+.wf-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
+  padding: 3px 10px;
+  border-radius: 99px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.nodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.node-item {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+.node-num-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.node-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.2);
+  border: 2px solid var(--accent-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #c4b5fd;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+  z-index: 2;
+}
+.node-line {
+  width: 2px;
+  flex-grow: 1;
+  background: var(--border-subtle);
+  margin-top: 8px;
+}
+.node-item:last-child .node-line {
+  display: none;
+}
+.node-content-box {
+  flex-grow: 1;
+  background: rgba(10, 12, 20, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  transition: all 0.2s;
+}
+.node-content-box:hover {
+  border-color: var(--border-cyan);
+  background: rgba(15, 18, 30, 0.8);
+}
+.node-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.node-type {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+.node-id {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+.node-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.node-explanation {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.node-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.node-meta-pills span {
+  font-size: 0.74rem;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 /* Real Story Section */
 .lead-story-section {
   padding: 60px 0;
@@ -603,7 +776,7 @@ a {
 /* Responsive */
 @media (max-width: 992px) {
   .hero-title { font-size: 2.8rem; }
-  .step-list-grid, .discovery-grid, .story-grid, .roadmap-grid { grid-template-columns: 1fr; }
+  .step-list-grid, .discovery-grid, .story-grid, .roadmap-grid, .diagram-caption-grid { grid-template-columns: 1fr; }
   .metric-strip { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .metric-item:not(:last-child)::after { display: none; }
 }
